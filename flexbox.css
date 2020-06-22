@@ -1,41 +1,55 @@
 body
-{ color:#FCFAF9; 
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-  background-color: #273052;
+{ color:#DFD128; 
+  font-family: monospace;
+  background-color: #843B5C;
   word-wrap: break-word;
-  background-image: url('pineapple.jpg')
+  font-size: 20px;
+  background-image: url('pineappleinverted.jpg')
+
+ }
+
+ a:link {
+   background-color: #D3D921;
+   text-color: #843B5C
  }
 
  header {
-    background-color:#BE6341;
-    color: #FCFAF9;
+    background-color:#D3D921;
+    color: #843B5C;
     text-align: center;
-    margin: 1%}
+    padding: 10px 20px 10px 20px;
+    margin: 10px;
+    }
 
  nav {
-    background-color: #8B8FB3;
+   background-color: #CC3F1C;
     font-size: 28;
     color: #FCFAF9;
     text-align: left;
-    margin: 1%;}
+    margin: 10px;
+    padding: 10px 20px 10px 20px;}
 
  main {
-    background-color:#8B8FB3;
-    color: #273052;
+    background-color:#DFD128;
+    color: #CC3F1C;
     text-align: left;
-    margin: 1%} 
+    margin: 10px;
+    padding: 10px 5% 10px 5%;
+    word-wrap: break-word;
+    flex-grow: 5 } 
     
  aside {
-    background-color: #8B8FB3;
-    color: #FCFAF9;
+    background-color: #CC3F1C;
+    color: #D3D921;
     text-align: right;
-    margin: 1%}
+    margin: 10px;}
 
  footer {
-    background-color:#55BEEE;
-    color: #273052;
+    background-color:#CC3F1C;
+    color: #DFD128;
     text-align: center;
-    margin: 1%}
+    padding: 10px 20px 10px 20px;
+    margin: 10px;}
 
 
 @media only screen and (max-width: 600px) {
@@ -45,5 +59,10 @@ body
 
 @media only screen and (min-width: 1024px) {
     body {background-color: rgb(40, 40, 70); font-size: 24; max-width:84%; margin: auto;
+      
     }
+    .flex-container {
+      display: flex;
+      flex-direction: row; }
+      aside {width: 180px}
 }
