@@ -10,7 +10,7 @@ body
 
  a:link {
    background-color: #D3D921;
-   text-color: #843B5C
+   color: #843B5C
  }
 
  header {
@@ -68,5 +68,5 @@ body
           grid-template-rows: auto;
           grid-template-columns: auto auto auto;
         }
-        aside {width: 180px}
+        main {max-width: 90%}
       }
